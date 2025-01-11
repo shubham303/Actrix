@@ -1,0 +1,33 @@
+# pyproject.toml
+[tool.ruff]
+# Enable all rules by default
+select = ["ALL"]
+
+# Ignore specific rules that might be too strict
+ignore = [
+    "D100",  # Missing docstring in public module
+    "D104",  # Missing docstring in public package
+]
+
+# Line length
+line-length = 100
+
+# Python target version
+target-version = "py39"
+
+# Files to exclude
+exclude = [
+    ".git",
+    ".ruff_cache",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+# Additional rules configuration
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]  # Ignore unused imports in __init__.py files
+"tests/*" = ["D"]  # Ignore documentation-related rules in tests
+
+[tool.ruff.mccabe]
+max-complexity = 10

@@ -1,0 +1,54 @@
+# First, create the pre-commit hook file
+mkdir -p .git/hooks
+cat > .git/hooks/pre-commit << 'EOF'
+#!/bin/bash
+
+echo "Running pre-commit checks..."
+
+# Store the current Git stash list
+STASH_LIST=$(git stash list)
+
+# Stash unstaged changes
+git stash -q --keep-index
+
+# Function to cleanup on exit
+cleanup() {
+    # Only pop stash if there were unstaged changes
+    if [ "$(git stash list)" != "$STASH_LIST" ]; then
+        git stash pop -q
+    fi
+}
+
+# Register cleanup function to run on script exit
+trap cleanup EXIT
+
+# Run Ruff checks
+echo "Running Ruff checks..."
+ruff check .
+RUFF_STATUS=$?
+
+if [ $RUFF_STATUS -ne 0 ]; then
+    echo "❌ Ruff checks failed. Please fix the issues and try again."
+    exit 1
+fi
+
+echo "✅ Ruff checks passed."
+
+# Run tests
+echo "Running tests..."
+python -m pytest
+TEST_STATUS=$?
+
+if [ $TEST_STATUS -ne 0 ]; then
+    echo "❌ Tests failed. Please fix the failing tests and try again."
+    exit 1
+fi
+
+echo "✅ Tests passed."
+
+echo "All pre-commit checks passed! 🎉"
+exit 0
+EOF
+
+# Make the hook executable
+chmod +x .git/hooks/pre-commit

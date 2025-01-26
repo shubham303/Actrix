@@ -1,3 +1,7 @@
 hello.py
 uv.lock
 .env
+.build/
+.vscode/
+.ruff_cache/
+

@@ -1,7 +1,7 @@
 hello.py
 uv.lock
 .env
-.build/
+build/*
 .vscode/
 .ruff_cache/
 actrix.egg-info/

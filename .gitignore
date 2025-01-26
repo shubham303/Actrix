@@ -4,4 +4,4 @@ uv.lock
 .build/
 .vscode/
 .ruff_cache/
-
+actrix.egg-info/

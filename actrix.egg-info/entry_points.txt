@@ -1,0 +1,2 @@
+[console_scripts]
+actrix = actrix.__main__:main

@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: actrix
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: numpy<2.0.0
+Requires-Dist: opencv-python
+Requires-Dist: ruff
+Requires-Dist: pytest
+Requires-Dist: structlog
+Requires-Dist: timm==0.4.12
+Requires-Dist: tabulate
+Dynamic: requires-dist

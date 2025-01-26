@@ -6,3 +6,4 @@ ruff
 pytest
 structlog
 timm==0.4.12
+tabulate

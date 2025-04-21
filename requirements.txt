@@ -1,8 +1,0 @@
-torch
-torchvision
-numpy<2.0.0
-opencv-python
-ruff
-pytest
-structlog
-timm==0.4.12

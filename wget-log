@@ -1,0 +1,12 @@
+--2025-04-24 09:16:14--  http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar
+Resolving serre-lab.clps.brown.edu (serre-lab.clps.brown.edu)... 128.148.254.114
+Connecting to serre-lab.clps.brown.edu (serre-lab.clps.brown.edu)|128.148.254.114|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar [following]
+--2025-04-24 09:16:15--  https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar
+Connecting to serre-lab.clps.brown.edu (serre-lab.clps.brown.edu)|128.148.254.114|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2124008126 (2.0G)
+Saving to: 'data/hmdb51/hmdb51_org.rar.1'
+
+hmdb51_org.rar.1                             0%[                                                                                        ]   5.24M  11.5 B/s    eta 1599d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  14.6 B/s    eta 1599d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  14.6 B/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  14.6 B/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  14.6 B/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  14.6 B/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  --.-KB/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  --.-KB/s    eta 1327d  hmdb51_org.rar.1                             0%[                                                                                        ]   6.31M  --.-KB/s    eta 1327d  
